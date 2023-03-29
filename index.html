@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Your Card Information</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Update Your Card Information</h1>
+      <button id="back">Back to Homepage</button>
+    </div>
+    <div id="container">
+      <form method="get" action="https://mjmealey.github.io/update-card/">
+        <label class="firstName" for="firstName"
+          >First Name:
+          <input
+            id="firstName"
+            type="text"
+            class="input"
+            name="user_firstname"
+            pattern="^[a-zA-Z]+$"
+            required
+          />
+          <label class="lastName" for="lastName">
+            Last Name:
+            <input
+              type="text"
+              id="lastName"
+              class="input"
+              name="user_lastname"
+              pattern="^[a-zA-Z]+$"
+              required
+            />
+          </label>
+        </label>
+        <label class="cardType" for="cardType">Card Type:</label>
+        <input id="masterCard" type="radio" name="user_mastercard" />
+        <label for="masterCard"> Mastercard</label>
+        <input id="amex" type="radio" name="user_amex" />
+        <label for="amex">American Express</label>
+        <input id="visa" type="radio" name="user_visa" />
+        <label for="visa">Visa</label>
+        <div id="containerTwo">
+          <label for="cardNumber"
+            >Card Number:
+            <input
+              id="cardNumber"
+              name="user_name"
+              type="text"
+              class="input"
+              pattern="^[0-9.-_\]{16}$"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+            />
+            <label class="expLabel" for="cardExp">
+              Expiration Date:
+              <input
+                id="cardExp"
+                type="date"
+                class="input"
+                minlength="1-1-24"
+                maxlength="1-1-2029"
+                name="user_expiration"
+              />
+            </label>
+          </label>
+          <label class="cvvLabel" for="cvv"
+            >CVV:
+            <input
+              id="cvv"
+              type="text"
+              class="input"
+              name="user_cvv"
+              minlength="3"
+              maxlength="4"
+              pattern="^[0-9]{3,4}$"
+            />
+          </label>
+
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
