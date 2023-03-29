@@ -1,0 +1,96 @@
+
+.input:hover{
+    background-color:aliceblue;
+}
+
+.input:invalid{
+    color:red;
+}
+
+.input:valid{
+    color:blue;
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url(Helvetica.ttf);
+}
+
+h1 {
+  margin-left: 1020px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body {
+  background-color: royalblue;
+  color: white;
+  font-family: helvetica;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#containerTwo {
+  margin-top: 150px;
+}
+
+.firstName{
+    margin-left:6px;
+}
+
+.lastName {
+  margin-left: 10px;
+}
+
+.expLabel {
+  margin-left: 15px;
+}
+
+.cvvLabel {
+  margin-left: 20px;
+}
+
+#submit {
+  margin-left: 35px;
+  background-color: #599fda;
+  border-radius: 10px;
+  border-style: solid;
+  color: white;
+  font-family: helvetica;
+  padding: 15px;
+  border-color: #599fda;
+}
+
+#submit:hover {
+  background-color: steelblue;
+}
+
+.cardType {
+  margin-left: 10px;
+}
+
+#back {
+  margin-right: 15px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #599fda;
+  background-color: #599fda;
+  padding: 10px;
+  color: white;
+}
+
+#back:hover {
+  background-color: steelblue;
+}
+
